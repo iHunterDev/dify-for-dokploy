@@ -590,6 +590,9 @@ services:
     depends_on:
       - api
       - web
+    ports:
+      - 80
+      - 443
     networks:
       - dokploy-network
 
