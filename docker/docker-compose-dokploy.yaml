@@ -591,8 +591,8 @@ services:
       - api
       - web
     ports:
-      - '${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-80}'
-      - '${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}'
+      - 80
+      - 443
     networks:
       - dokploy-network
 
@@ -843,8 +843,8 @@ services:
       - etcd
       - minio
     ports:
-      - 19530:19530
-      - 9091:9091
+      - 19530
+      - 9091
     networks:
       - dokploy-network
 
